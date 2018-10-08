@@ -3,12 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-p {
+marquee {
   text-align: center;
   font-size: 40px;
   margin-top: 0px;
   padding: 40px;
-  padding-top: 150px;
+  padding-top: 120px;
   font-family: Georgia;
 }
 body, html {
@@ -37,10 +37,11 @@ body, html {
 <body>
   <div class= "c" style="float:left; left:0%; width: 50%; height: 100%;" ></div>
   <div class="bg" style="float: left;">
-  <p id="demo"> </p>
+  <marquee scrollamount= "11" behavior= "alternate" id="demo"> </marquee>
 
 <script>
 // Set the date we're counting down to
+//setInterval(function(){ id.left += 1; if(id.left == 100){id.left=50} }, 2000);
 var countDownDate = new Date("Dec 28, 2018 08:00:00").getTime();
 
 // Update the count down every 1 second
