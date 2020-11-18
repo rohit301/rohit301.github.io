@@ -27,11 +27,21 @@ body, html {
   
 }
 .c{
-  background-image: url("1.JPG"); 
+  
   background-position: absolute;
   background-size: cover;
   background-repeat: no-repeat; 
 }
+
+@media only screen and (min-device-height: 650px){
+
+  .c{  background-image: url("1.JPG"); }
+}
+@media only screen and (max-device-height: 640px) and (max-device-width: 300px)
+{
+.c{  background-image: url("3.JPG"); }
+}
+
 </style>
 </head>
 <body>
@@ -66,7 +76,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "CONGRATULATIONS TO US- Rohit And Alka. May our love last as long as we live :) ";
     }
 }, 1000);
 </script>
